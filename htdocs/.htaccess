@@ -1,0 +1,21 @@
+php_value include_path .:/usr/local/php/lib/php:/usr/share/php:/mnt/hgfs/UbuntuDocumentRoot/topHat
+php_value auto_prepend_file bootstrap.php
+php_value magic_quotes_gpc 0
+php_value register_globals 0
+
+php_flag display_errors on
+
+
+Options +FollowSymlinks
+
+RewriteEngine on
+
+#any URL request that doesn't have an extension will be redirected to index.php
+RewriteRule !\.[a-z]{2,7}$ /index.php
+
+ErrorDocument 404 /mnt/hgfs/UbuntuDocumentRoot/views/errors/404.php
+
+<Files ~ "\.htaccess">
+Order allow,deny
+Deny from all
+</Files>

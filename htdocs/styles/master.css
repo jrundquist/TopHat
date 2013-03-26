@@ -1,0 +1,22 @@
+/**
+*	Master CSS Style Sheet
+*
+*	== Common Colors ==
+*
+* 	1B8CA6	Darker Blue
+*	21AFBF	Lighter Blue
+*	FFFFFF	White
+*	D7F205	Light Green
+*	C0D904	Garker Green
+*
+*	D7DCE0	Background Top
+*
+*/
+
+body{
+	min-height:500px;
+	background: #FFFFFF; /* fallback for older/unsupporting browsers */
+	background: -moz-linear-gradient(top, #D7DCE0, #FFFFFF 10%) no-repeat;
+	background: -webkit-gradient(linear, 0 0, 0 10%, from(#D7DCE0), to(#FFFFFF)) no-repeat;
+	border-top: 1px solid #D7DCE0;
+}
